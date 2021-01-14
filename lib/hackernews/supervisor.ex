@@ -1,7 +1,8 @@
 defmodule Hackernews.Supervisor do
   use Supervisor
+  use Application
 
-  def start_link do
+  def start(_args, _opts) do
     Supervisor.start_link(__MODULE__, :ok, name: __MODULE__)
   end
 

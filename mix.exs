@@ -18,6 +18,7 @@ defmodule Hackernews.MixProject do
         list_url: "https://hacker-news.firebaseio.com/v0/newstories.json",
         story_url: "https://hacker-news.firebaseio.com/v0/item/",
       ],
+      mod: {Hackernews.Supervisor, []},
       extra_applications: [:logger]
     ]
   end
