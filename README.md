@@ -1,6 +1,15 @@
 # Hackernews
 
-**TODO: Add description**
+Periodically requests the metadata associated with the latest hackernews article.  
+
+Begin supervision tree using 
+```elixir
+Hackernews.Supervisor.start_link 
+```  
+Get latest title using 
+```elixir
+Hackernews.Client.latest_title
+```
 
 ## Installation
 
